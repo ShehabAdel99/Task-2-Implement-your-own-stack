@@ -107,7 +107,6 @@ bool areBracketsBalanced(char exp[])
         }
         i++;
     }
- 
     // If there is something left in expression then there
     // is a starting bracket without a closing
     // bracket
@@ -117,17 +116,17 @@ bool areBracketsBalanced(char exp[])
         return false; // not balanced
 }
  
-// Driver code
+// main code
 int main()
 {
     char exp[100] ;
-    printf("Type the expression.\n");
+    printf("Type the expression.\n\n");
     scanf("%[^\n]", &exp);                // Or by gets(exp);
     // Function call
     if (areBracketsBalanced(exp))
-        printf("Balanced \n");
+        printf("\nBalanced \n");
     else
-        printf("Not Balanced \n");
+        printf("\nNot Balanced \n");
 
     return 0;
 }
